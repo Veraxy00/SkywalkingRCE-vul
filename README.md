@@ -9,6 +9,8 @@ https://mp.weixin.qq.com/s/hB-r523_4cM0jZMBOt6Vhw
 ## 环境
 Skywalking测试环境JDK1.8，恶意类为JDK1.7编译。
 
+![](img/SkywalkingRCE.gif)
+
 ## 写入恶意类文件
 将恶意类编译并转为十六进制数据，为`file_write`方法的第一个参数赋值，第二个参数为class文件名。
 
