@@ -6,10 +6,15 @@ https://github.com/apache/skywalking/pull/6246/files
 
 https://mp.weixin.qq.com/s/hB-r523_4cM0jZMBOt6Vhw
 
+## 环境
+Skywalking测试环境JDK1.8，恶意类为JDK1.7编译。
+
 ## 写入恶意类文件
 将恶意类编译并转为十六进制数据，为`file_write`方法的第一个参数赋值，第二个参数为class文件名。
 
-恶意类EvilClass.java 和 转十六进制工具代码ToHexTools.java 均在项目中，执行 ToHexTools.java 会将 EvilClass.class 文件内容转码为十六进制形式，输出为 file.hex 文件。
+恶意类EvilClass.java 和 转十六进制工具代码ToHexTools.java 均在项目中。
+
+执行 ToHexTools.java 会将 EvilClass.class 文件内容转码为十六进制形式，输出为 file.hex 文件。
 
 ![找不到](img/3.jpg)
 
